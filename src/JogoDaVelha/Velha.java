@@ -36,20 +36,25 @@ public class Velha { //classe que controla o jogo como um todo
         if(jogada.contains("1")){ //147
             if(jogada.contains("4")){
                 if(jogada.contains("7")){
-                    JOptionPane.showMessageDialog(null, "Parabéns "+jogador+"! Você venceu o jogo!" ,"Vencedor",JOptionPane.OK_OPTION);
-                    turno=0;                }
+                    JOptionPane.showMessageDialog(null, "Parabéns "+jogador+"! Você venceu o jogo!");
+                    turno=0;
+                    finalizarPartida();
+                }
             }
             
             if(jogada.contains("5")){//159
                 if(jogada.contains("9")){
-                    JOptionPane.showMessageDialog(null, "Parabéns "+jogador+"! Você venceu o jogo!" ,"Vencedor",JOptionPane.OK_OPTION);
+                    JOptionPane.showMessageDialog(null, "Parabéns "+jogador+"! Você venceu o jogo!");
                     turno=0;
+                    finalizarPartida();
                 }
             }
             if(jogada.contains("2")){//123
                 if(jogada.contains("3")){
-                    JOptionPane.showMessageDialog(null, "Parabéns "+jogador+"! Você venceu o jogo!" ,"Vencedor",JOptionPane.OK_OPTION);
-                    turno=0;                }
+                    JOptionPane.showMessageDialog(null, "Parabéns "+jogador+"! Você venceu o jogo!");
+                    turno=0;                
+                    finalizarPartida();
+                }
             }
             
         }
@@ -57,8 +62,9 @@ public class Velha { //classe que controla o jogo como um todo
         if(jogada.contains("2")){
             if(jogada.contains("5")){
                 if(jogada.contains("8")){
-                    JOptionPane.showMessageDialog(null, "Parabéns "+jogador+"! Você venceu o jogo!" ,"Vencedor",JOptionPane.OK_OPTION);
+                    JOptionPane.showMessageDialog(null, "Parabéns "+jogador+"! Você venceu o jogo!");
                     turno=0;
+                    finalizarPartida();
                     
                 }
             }
@@ -67,14 +73,16 @@ public class Velha { //classe que controla o jogo como um todo
         if(jogada.contains("3")){
             if(jogada.contains("5")){
                 if(jogada.contains("7")){
-                    JOptionPane.showMessageDialog(null, "Parabéns "+jogador+"! Você venceu o jogo!" ,"Vencedor",JOptionPane.OK_OPTION);
+                    JOptionPane.showMessageDialog(null, "Parabéns "+jogador+"! Você venceu o jogo!");
                     turno=0;
+                    finalizarPartida();
                 }
             }
             if(jogada.contains("6")){
                 if(jogada.contains("9")){
-                    JOptionPane.showMessageDialog(null, "Parabéns "+jogador+"! Você venceu o jogo!" ,"Vencedor",JOptionPane.OK_OPTION);
+                    JOptionPane.showMessageDialog(null, "Parabéns "+jogador+"! Você venceu o jogo!");
                     turno=0;
+                    finalizarPartida();
                 }
             }
         }
@@ -82,8 +90,9 @@ public class Velha { //classe que controla o jogo como um todo
         if(jogada.contains("4")){
             if(jogada.contains("5")){
                 if(jogada.contains("6")){
-                    JOptionPane.showMessageDialog(null, "Parabéns "+jogador+"! Você venceu o jogo!" ,"Vencedor",JOptionPane.OK_OPTION);
+                    JOptionPane.showMessageDialog(null, "Parabéns "+jogador+"! Você venceu o jogo!");
                     turno=0;
+                    finalizarPartida();
                 }
             }
         }
@@ -91,11 +100,48 @@ public class Velha { //classe que controla o jogo como um todo
         if(jogada.contains("7")){
             if(jogada.contains("8")){
                 if(jogada.contains("9")){
-                    JOptionPane.showMessageDialog(null, "Parabéns "+jogador+"! Você venceu o jogo!" ,"Vencedor",JOptionPane.OK_OPTION);
+                    JOptionPane.showMessageDialog(null, "Parabéns "+jogador+"! Você venceu o jogo!");
                     turno=0;
+                    finalizarPartida();
                 }
             }
         }
+        
+        if(turno==9){
+            JOptionPane.showMessageDialog(null, "Empate! Deu velha!");
+            finalizarPartida();
+        }
+            
+    }
+    
+    public void finalizarPartida(){
+        VelhaTela.BotaoVelhaCampo1.setEnabled(false);
+        VelhaTela.BotaoVelhaCampo2.setEnabled(false);
+        VelhaTela.BotaoVelhaCampo3.setEnabled(false);
+        VelhaTela.BotaoVelhaCampo4.setEnabled(false);
+        VelhaTela.BotaoVelhaCampo5.setEnabled(false);
+        VelhaTela.BotaoVelhaCampo6.setEnabled(false);
+        VelhaTela.BotaoVelhaCampo7.setEnabled(false);
+        VelhaTela.BotaoVelhaCampo8.setEnabled(false);
+        VelhaTela.BotaoVelhaCampo9.setEnabled(false);
+
+        VelhaTela.BotaoVelhaCampo1.setText("  ");
+        VelhaTela.BotaoVelhaCampo2.setText("  ");
+        VelhaTela.BotaoVelhaCampo3.setText("  ");
+        VelhaTela.BotaoVelhaCampo4.setText("  ");
+        VelhaTela.BotaoVelhaCampo5.setText("  ");
+        VelhaTela.BotaoVelhaCampo6.setText("  ");
+        VelhaTela.BotaoVelhaCampo7.setText("  ");
+        VelhaTela.BotaoVelhaCampo8.setText("  ");
+        VelhaTela.BotaoVelhaCampo9.setText("  ");
+
+
+        VelhaTela.botaoFinalizarPartida.setEnabled(false);
+        VelhaTela.botaoIniciarPartida.setEnabled(true);
+        VelhaTela.campoNomeJogador1.setEnabled(true);
+        VelhaTela.campoNomeJogador2.setEnabled(true);
+        VelhaTela.campoSimboloJogador1.setEnabled(true);
+        VelhaTela.campoSimboloJogador2.setEnabled(true);
     }
     
     

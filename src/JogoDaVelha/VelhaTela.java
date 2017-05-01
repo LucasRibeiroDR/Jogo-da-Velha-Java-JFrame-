@@ -81,6 +81,10 @@ public class VelhaTela extends javax.swing.JFrame {
 
         jLabel4.setText("Símbolo do Jogador 2:");
 
+        campoNomeJogador1.setText("Lucas ");
+
+        campoNomeJogador2.setText("Nath");
+
         jLabel5.setText("Jogo da Velha");
 
         botaoIniciarPartida.setText("Iniciar Partida");
@@ -89,6 +93,10 @@ public class VelhaTela extends javax.swing.JFrame {
                 botaoIniciarPartidaActionPerformed(evt);
             }
         });
+
+        campoSimboloJogador1.setText("X");
+
+        campoSimboloJogador2.setText("O");
 
         BotaoVelhaCampo1.setText("  ");
         BotaoVelhaCampo1.setEnabled(false);
@@ -163,6 +171,7 @@ public class VelhaTela extends javax.swing.JFrame {
         });
 
         botaoFinalizarPartida.setText("Finalizar Partida");
+        botaoFinalizarPartida.setEnabled(false);
         botaoFinalizarPartida.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoFinalizarPartidaActionPerformed(evt);
@@ -420,7 +429,6 @@ public class VelhaTela extends javax.swing.JFrame {
             velha.verificarResultado(jogadas2, campoNomeJogador2.getText());
         }
         BotaoVelhaCampo4.setEnabled(false);
-        System.out.println("jogadas 1 = "+jogadas1+"    jogadas 2 = "+jogadas2);
 
     }//GEN-LAST:event_BotaoVelhaCampo4ActionPerformed
 
@@ -438,38 +446,9 @@ public class VelhaTela extends javax.swing.JFrame {
     }//GEN-LAST:event_BotaoVelhaCampo5ActionPerformed
 
     private void botaoFinalizarPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoFinalizarPartidaActionPerformed
-        finalizarPartida();
+        velha.finalizarPartida();
     }//GEN-LAST:event_botaoFinalizarPartidaActionPerformed
 
-    public void finalizarPartida(){
-        BotaoVelhaCampo1.setEnabled(false);
-        BotaoVelhaCampo2.setEnabled(false);
-        BotaoVelhaCampo3.setEnabled(false);
-        BotaoVelhaCampo4.setEnabled(false);
-        BotaoVelhaCampo5.setEnabled(false);
-        BotaoVelhaCampo6.setEnabled(false);
-        BotaoVelhaCampo7.setEnabled(false);
-        BotaoVelhaCampo8.setEnabled(false);
-        BotaoVelhaCampo9.setEnabled(false);
-
-        BotaoVelhaCampo1.setText("  ");
-        BotaoVelhaCampo2.setText("  ");
-        BotaoVelhaCampo3.setText("  ");
-        BotaoVelhaCampo4.setText("  ");
-        BotaoVelhaCampo5.setText("  ");
-        BotaoVelhaCampo6.setText("  ");
-        BotaoVelhaCampo7.setText("  ");
-        BotaoVelhaCampo8.setText("  ");
-        BotaoVelhaCampo9.setText("  ");
-
-
-        botaoFinalizarPartida.setEnabled(false);
-        botaoIniciarPartida.setEnabled(true);
-        campoNomeJogador1.setEnabled(true);
-        campoNomeJogador2.setEnabled(true);
-        campoSimboloJogador1.setEnabled(true);
-        campoSimboloJogador2.setEnabled(true);
-    }
     
     /**
      * @param args the command line arguments
@@ -508,21 +487,21 @@ public class VelhaTela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BotaoVelhaCampo1;
-    private javax.swing.JButton BotaoVelhaCampo2;
-    private javax.swing.JButton BotaoVelhaCampo3;
-    private javax.swing.JButton BotaoVelhaCampo4;
-    private javax.swing.JButton BotaoVelhaCampo5;
-    private javax.swing.JButton BotaoVelhaCampo6;
-    private javax.swing.JButton BotaoVelhaCampo7;
-    private javax.swing.JButton BotaoVelhaCampo8;
-    private javax.swing.JButton BotaoVelhaCampo9;
-    public javax.swing.JButton botaoFinalizarPartida;
-    private javax.swing.JButton botaoIniciarPartida;
-    private javax.swing.JTextField campoNomeJogador1;
-    private javax.swing.JTextField campoNomeJogador2;
-    private javax.swing.JTextField campoSimboloJogador1;
-    private javax.swing.JTextField campoSimboloJogador2;
+    public static javax.swing.JButton BotaoVelhaCampo1;
+    public static javax.swing.JButton BotaoVelhaCampo2;
+    public static javax.swing.JButton BotaoVelhaCampo3;
+    public static javax.swing.JButton BotaoVelhaCampo4;
+    public static javax.swing.JButton BotaoVelhaCampo5;
+    public static javax.swing.JButton BotaoVelhaCampo6;
+    public static javax.swing.JButton BotaoVelhaCampo7;
+    public static javax.swing.JButton BotaoVelhaCampo8;
+    public static javax.swing.JButton BotaoVelhaCampo9;
+    public static javax.swing.JButton botaoFinalizarPartida;
+    public static javax.swing.JButton botaoIniciarPartida;
+    public static javax.swing.JTextField campoNomeJogador1;
+    public static javax.swing.JTextField campoNomeJogador2;
+    public static javax.swing.JTextField campoSimboloJogador1;
+    public static javax.swing.JTextField campoSimboloJogador2;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
