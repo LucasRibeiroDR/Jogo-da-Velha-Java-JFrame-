@@ -55,6 +55,8 @@ public class VelhaTela extends javax.swing.JFrame {
         BotaoVelhaCampo8 = new javax.swing.JButton();
         BotaoVelhaCampo9 = new javax.swing.JButton();
         botaoFinalizarPartida = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
         jDialog1.getContentPane().setLayout(jDialog1Layout);
@@ -69,8 +71,10 @@ public class VelhaTela extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        labelJogador1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         labelJogador1.setText("Jogador 1:");
 
+        labelJogador2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         labelJogador2.setText("Jogador 2:");
 
         jLabel1.setText("Nome do Jogador 1:");
@@ -85,6 +89,8 @@ public class VelhaTela extends javax.swing.JFrame {
 
         campoNomeJogador2.setText("Nath");
 
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(153, 0, 0));
         jLabel5.setText("Jogo da Velha");
 
         botaoIniciarPartida.setText("Iniciar Partida");
@@ -98,6 +104,7 @@ public class VelhaTela extends javax.swing.JFrame {
 
         campoSimboloJogador2.setText("O");
 
+        BotaoVelhaCampo1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BotaoVelhaCampo1.setText("  ");
         BotaoVelhaCampo1.setEnabled(false);
         BotaoVelhaCampo1.addActionListener(new java.awt.event.ActionListener() {
@@ -106,6 +113,7 @@ public class VelhaTela extends javax.swing.JFrame {
             }
         });
 
+        BotaoVelhaCampo2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BotaoVelhaCampo2.setText("  ");
         BotaoVelhaCampo2.setEnabled(false);
         BotaoVelhaCampo2.addActionListener(new java.awt.event.ActionListener() {
@@ -114,6 +122,7 @@ public class VelhaTela extends javax.swing.JFrame {
             }
         });
 
+        BotaoVelhaCampo3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BotaoVelhaCampo3.setText("  ");
         BotaoVelhaCampo3.setEnabled(false);
         BotaoVelhaCampo3.addActionListener(new java.awt.event.ActionListener() {
@@ -122,6 +131,7 @@ public class VelhaTela extends javax.swing.JFrame {
             }
         });
 
+        BotaoVelhaCampo4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BotaoVelhaCampo4.setText("  ");
         BotaoVelhaCampo4.setEnabled(false);
         BotaoVelhaCampo4.addActionListener(new java.awt.event.ActionListener() {
@@ -130,6 +140,7 @@ public class VelhaTela extends javax.swing.JFrame {
             }
         });
 
+        BotaoVelhaCampo5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BotaoVelhaCampo5.setText("  ");
         BotaoVelhaCampo5.setEnabled(false);
         BotaoVelhaCampo5.addActionListener(new java.awt.event.ActionListener() {
@@ -138,6 +149,7 @@ public class VelhaTela extends javax.swing.JFrame {
             }
         });
 
+        BotaoVelhaCampo6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BotaoVelhaCampo6.setText("  ");
         BotaoVelhaCampo6.setEnabled(false);
         BotaoVelhaCampo6.addActionListener(new java.awt.event.ActionListener() {
@@ -146,6 +158,7 @@ public class VelhaTela extends javax.swing.JFrame {
             }
         });
 
+        BotaoVelhaCampo7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BotaoVelhaCampo7.setText("  ");
         BotaoVelhaCampo7.setEnabled(false);
         BotaoVelhaCampo7.addActionListener(new java.awt.event.ActionListener() {
@@ -154,6 +167,7 @@ public class VelhaTela extends javax.swing.JFrame {
             }
         });
 
+        BotaoVelhaCampo8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BotaoVelhaCampo8.setText("  ");
         BotaoVelhaCampo8.setEnabled(false);
         BotaoVelhaCampo8.addActionListener(new java.awt.event.ActionListener() {
@@ -162,6 +176,7 @@ public class VelhaTela extends javax.swing.JFrame {
             }
         });
 
+        BotaoVelhaCampo9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BotaoVelhaCampo9.setText("  ");
         BotaoVelhaCampo9.setEnabled(false);
         BotaoVelhaCampo9.addActionListener(new java.awt.event.ActionListener() {
@@ -178,67 +193,73 @@ public class VelhaTela extends javax.swing.JFrame {
             }
         });
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(153, 0, 0));
+        jLabel6.setText("Partida");
+
+        jLabel7.setText("(clique no botão referênte à posição que deseja jogar)");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botaoFinalizarPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jLabel5))
+                        .addComponent(jLabel6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel7))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(162, 162, 162)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(134, 134, 134)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(BotaoVelhaCampo1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(BotaoVelhaCampo2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(BotaoVelhaCampo3))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(BotaoVelhaCampo4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(BotaoVelhaCampo5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(BotaoVelhaCampo6))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(BotaoVelhaCampo7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(BotaoVelhaCampo8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(BotaoVelhaCampo9))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(59, 59, 59)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(18, 18, 18)
-                                .addComponent(campoNomeJogador2, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(campoSimboloJogador2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addGap(18, 18, 18)
-                                .addComponent(campoNomeJogador1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(campoSimboloJogador1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(labelJogador1)
-                            .addComponent(labelJogador2)
-                            .addComponent(botaoIniciarPartida, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(botaoFinalizarPartida, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(112, Short.MAX_VALUE))
+                        .addComponent(jLabel2)
+                        .addGap(18, 18, 18)
+                        .addComponent(campoNomeJogador2, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(campoSimboloJogador2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(18, 18, 18)
+                        .addComponent(campoNomeJogador1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(campoSimboloJogador1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(labelJogador1)
+                    .addComponent(labelJogador2)
+                    .addComponent(jLabel5)
+                    .addComponent(botaoIniciarPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(19, 19, 19)
                 .addComponent(jLabel5)
-                .addGap(36, 36, 36)
+                .addGap(18, 18, 18)
                 .addComponent(labelJogador1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -256,11 +277,13 @@ public class VelhaTela extends javax.swing.JFrame {
                         .addComponent(campoNomeJogador2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel4)
                         .addComponent(campoSimboloJogador2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
+                .addGap(29, 29, 29)
                 .addComponent(botaoIniciarPartida)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(botaoFinalizarPartida)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -276,7 +299,9 @@ public class VelhaTela extends javax.swing.JFrame {
                     .addComponent(BotaoVelhaCampo7, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BotaoVelhaCampo8, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BotaoVelhaCampo9, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(botaoFinalizarPartida)
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         pack();
@@ -508,6 +533,8 @@ public class VelhaTela extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JOptionPane jOptionPane1;
     private javax.swing.JLabel labelJogador1;
     private javax.swing.JLabel labelJogador2;
