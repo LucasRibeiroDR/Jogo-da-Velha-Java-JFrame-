@@ -33,6 +33,7 @@ public class VelhaTela extends javax.swing.JFrame {
 
         jDialog1 = new javax.swing.JDialog();
         jOptionPane1 = new javax.swing.JOptionPane();
+        jLabel8 = new javax.swing.JLabel();
         labelJogador1 = new javax.swing.JLabel();
         labelJogador2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -43,7 +44,6 @@ public class VelhaTela extends javax.swing.JFrame {
         campoNomeJogador2 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         botaoIniciarPartida = new javax.swing.JButton();
-        campoSimboloJogador1 = new javax.swing.JTextField();
         campoSimboloJogador2 = new javax.swing.JTextField();
         BotaoVelhaCampo1 = new javax.swing.JButton();
         BotaoVelhaCampo2 = new javax.swing.JButton();
@@ -57,6 +57,7 @@ public class VelhaTela extends javax.swing.JFrame {
         botaoFinalizarPartida = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        campoSimboloJogador1 = new javax.swing.JTextField();
 
         javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
         jDialog1.getContentPane().setLayout(jDialog1Layout);
@@ -68,6 +69,8 @@ public class VelhaTela extends javax.swing.JFrame {
             jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 300, Short.MAX_VALUE)
         );
+
+        jLabel8.setText("jLabel8");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -85,10 +88,6 @@ public class VelhaTela extends javax.swing.JFrame {
 
         jLabel4.setText("Símbolo do Jogador 2:");
 
-        campoNomeJogador1.setText("Lucas ");
-
-        campoNomeJogador2.setText("Nath");
-
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(153, 0, 0));
         jLabel5.setText("Jogo da Velha");
@@ -99,10 +98,6 @@ public class VelhaTela extends javax.swing.JFrame {
                 botaoIniciarPartidaActionPerformed(evt);
             }
         });
-
-        campoSimboloJogador1.setText("X");
-
-        campoSimboloJogador2.setText("O");
 
         BotaoVelhaCampo1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BotaoVelhaCampo1.setText("  ");
@@ -205,7 +200,7 @@ public class VelhaTela extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(botaoFinalizarPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel6)
@@ -247,12 +242,12 @@ public class VelhaTela extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(campoSimboloJogador1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(campoSimboloJogador1, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
                     .addComponent(labelJogador1)
                     .addComponent(labelJogador2)
                     .addComponent(jLabel5)
                     .addComponent(botaoIniciarPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -535,6 +530,7 @@ public class VelhaTela extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JOptionPane jOptionPane1;
     private javax.swing.JLabel labelJogador1;
     private javax.swing.JLabel labelJogador2;

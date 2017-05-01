@@ -19,6 +19,11 @@
     </Container>
     <Component class="javax.swing.JOptionPane" name="jOptionPane1">
     </Component>
+    <Component class="javax.swing.JLabel" name="jLabel8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabel8"/>
+      </Properties>
+    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -44,7 +49,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="botaoFinalizarPartida" alignment="0" min="-2" pref="414" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
@@ -93,14 +98,14 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="campoSimboloJogador1" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Component id="campoSimboloJogador1" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Component id="labelJogador1" min="-2" max="-2" attributes="0"/>
                   <Component id="labelJogador2" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                   <Component id="botaoIniciarPartida" alignment="0" min="-2" pref="414" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="24" max="32767" attributes="0"/>
+              <EmptySpace pref="43" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -203,17 +208,11 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="campoNomeJogador1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Lucas "/>
-      </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="campoNomeJogador2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Nath"/>
-      </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
@@ -240,18 +239,7 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="campoSimboloJogador1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="X"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
-      </AuxValues>
-    </Component>
     <Component class="javax.swing.JTextField" name="campoSimboloJogador2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="O"/>
-      </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
@@ -418,6 +406,11 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="(clique no bot&#xe3;o refer&#xea;nte &#xe0; posi&#xe7;&#xe3;o que deseja jogar)"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="campoSimboloJogador1">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>
