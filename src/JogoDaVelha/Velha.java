@@ -24,12 +24,28 @@ public class Velha { //classe que controla o jogo como um todo
         turno = 0;
         jogadasJogador1 = "";
         jogadasJogador2 = "";
+                            
+        VelhaTela.BotaoVelhaCampo1.setEnabled(true);
+        VelhaTela.BotaoVelhaCampo2.setEnabled(true);
+        VelhaTela.BotaoVelhaCampo3.setEnabled(true);
+        VelhaTela.BotaoVelhaCampo4.setEnabled(true);
+        VelhaTela.BotaoVelhaCampo5.setEnabled(true);
+        VelhaTela.BotaoVelhaCampo6.setEnabled(true);
+        VelhaTela.BotaoVelhaCampo7.setEnabled(true);
+        VelhaTela.BotaoVelhaCampo8.setEnabled(true);
+        VelhaTela.BotaoVelhaCampo9.setEnabled(true);
+
+        VelhaTela.botaoFinalizarPartida.setEnabled(true);
+        VelhaTela.botaoIniciarPartida.setEnabled(false);
+        VelhaTela.campoNomeJogador1.setEnabled(false);
+        VelhaTela.campoNomeJogador2.setEnabled(false);
+        VelhaTela.campoSimboloJogador1.setEnabled(false);
+        VelhaTela.campoSimboloJogador2.setEnabled(false); 
     }
        
     public int passarTurno(){//conceito de encapsulamento;
         turno += 1;
         return turno;
-        
     }
     
     public void verificarResultado(String jogada, String jogador){
@@ -135,7 +151,6 @@ public class Velha { //classe que controla o jogo como um todo
         VelhaTela.BotaoVelhaCampo8.setText("  ");
         VelhaTela.BotaoVelhaCampo9.setText("  ");
 
-
         VelhaTela.botaoFinalizarPartida.setEnabled(false);
         VelhaTela.botaoIniciarPartida.setEnabled(true);
         VelhaTela.campoNomeJogador1.setEnabled(true);
@@ -143,6 +158,4 @@ public class Velha { //classe que controla o jogo como um todo
         VelhaTela.campoSimboloJogador1.setEnabled(true);
         VelhaTela.campoSimboloJogador2.setEnabled(true);
     }
-    
-    
 }

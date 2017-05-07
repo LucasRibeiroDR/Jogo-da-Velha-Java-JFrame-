@@ -357,46 +357,23 @@ public class VelhaTela extends javax.swing.JFrame {
 
     private void botaoIniciarPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoIniciarPartidaActionPerformed
         jogadas1="";
-        jogadas2="";
-        
+        jogadas2=""; 
         Velha velha = new Velha();
         
         if((campoSimboloJogador1.getText().length()!=1 || campoSimboloJogador2.getText().length()!=1) || (campoSimboloJogador1.getText().isEmpty() || campoSimboloJogador2.getText().isEmpty())){
-            JOptionPane.showMessageDialog(null, "Símbolo(s) inválido(s)!Os símbolos dos jogadores devem ter um, e apenas um caracter!" ,"Erro",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Símbolo(s) inválido(s)!Os símbolos dos jogadores devem ter um, e apenas um caractere!" ,"Erro",JOptionPane.ERROR_MESSAGE);
         }else if((campoNomeJogador1.getText().isEmpty() || campoNomeJogador2.getText().isEmpty())){
             JOptionPane.showMessageDialog(null, "Insira os nomes dos jogadores 1 e 2!" ,"Erro",JOptionPane.ERROR_MESSAGE);
-
-        }
-        
+        }  
         else if(campoSimboloJogador1.getText().equals(campoSimboloJogador2.getText())){
-            JOptionPane.showMessageDialog(null, "Os símbolos dos jogadores devem ser diferentes!");
-            
+            JOptionPane.showMessageDialog(null, "Os símbolos dos jogadores devem ser diferentes!");  
         }else{
-            velha.iniciarPartida(campoNomeJogador1.toString(), campoNomeJogador2.toString(), campoSimboloJogador1.toString(), campoSimboloJogador2.toString());
-            
-            BotaoVelhaCampo1.setEnabled(true);
-            BotaoVelhaCampo2.setEnabled(true);
-            BotaoVelhaCampo3.setEnabled(true);
-            BotaoVelhaCampo4.setEnabled(true);
-            BotaoVelhaCampo5.setEnabled(true);
-            BotaoVelhaCampo6.setEnabled(true);
-            BotaoVelhaCampo7.setEnabled(true);
-            BotaoVelhaCampo8.setEnabled(true);
-            BotaoVelhaCampo9.setEnabled(true);
-            
-            botaoFinalizarPartida.setEnabled(true);
-            botaoIniciarPartida.setEnabled(false);
-            campoNomeJogador1.setEnabled(false);
-            campoNomeJogador2.setEnabled(false);
-            campoSimboloJogador1.setEnabled(false);
-            campoSimboloJogador2.setEnabled(false);
-            
+            velha.iniciarPartida(campoNomeJogador1.toString(), campoNomeJogador2.toString(), campoSimboloJogador1.toString(), campoSimboloJogador2.toString());            
             JOptionPane.showMessageDialog(null, "Jogador(a) "+campoNomeJogador1.getText()+" começa jogando!");
         }
     }//GEN-LAST:event_botaoIniciarPartidaActionPerformed
 
     private void BotaoVelhaCampo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoVelhaCampo1ActionPerformed
-        
         if(velha.passarTurno()%2==1){
             BotaoVelhaCampo1.setText(campoSimboloJogador1.getText());
             jogadas1+="1";
@@ -406,8 +383,7 @@ public class VelhaTela extends javax.swing.JFrame {
             jogadas2+="1";
             velha.verificarResultado(jogadas2, campoNomeJogador2.getText());
         }
-        BotaoVelhaCampo1.setEnabled(false);
-        
+        BotaoVelhaCampo1.setEnabled(false);      
     }//GEN-LAST:event_BotaoVelhaCampo1ActionPerformed
 
     private void BotaoVelhaCampo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoVelhaCampo2ActionPerformed
