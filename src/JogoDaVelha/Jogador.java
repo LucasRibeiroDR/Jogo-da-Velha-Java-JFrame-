@@ -19,8 +19,36 @@ public class Jogador {
     }
     
     public void definirNomesESimbolos(String name,String simb){
-        this.nome = name;
-        this.simbolo = simb;
+        this.setNome(name);
+        this.setSimbolo(simb);
     }    
+
+    /**
+     * @return the nome
+     */
+    public String getNome() {
+        return nome;
+    }
+
+    /**
+     * @param nome the nome to set
+     */
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    /**
+     * @return the simbolo
+     */
+    public String getSimbolo() {
+        return simbolo;
+    }
+
+    /**
+     * @param simbolo the simbolo to set
+     */
+    public void setSimbolo(String simbolo) {
+        this.simbolo = simbolo;
+    }
 }
 

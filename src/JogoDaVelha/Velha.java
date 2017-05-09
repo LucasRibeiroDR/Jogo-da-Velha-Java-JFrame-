@@ -19,8 +19,11 @@ public class Velha { //classe que controla o jogo como um todo
     String jogadasJogador2;
 
     public void iniciarPartida(String nome1, String nome2, String simb1, String simb2){
-        jogador1.definirNomesESimbolos(nome1, simb1);
-        jogador2.definirNomesESimbolos(nome2, simb2);
+        jogador1.setNome(nome1);
+        jogador2.setNome(nome2);
+        jogador1.setSimbolo(simb1);
+        jogador2.setSimbolo(simb2);
+        
         turno = 0;
         jogadasJogador1 = "";
         jogadasJogador2 = "";
